@@ -1,25 +1,24 @@
-<div></div>
-<h1><img src="./docs/static/img/logo.svg" alt="TS Bitcoin" width="240" /></h1>
+# CWI-Bitcoin
 
-![Main CI](https://github.com/ts-bitcoin/ts-bitcoin/workflows/Main%20CI/badge.svg)
-[![npm](https://img.shields.io/npm/v/@ts-bitcoin/core.svg)](https://www.npmjs.com/package/@ts-bitcoin/core)
-[![downloads](https://img.shields.io/npm/dt/@ts-bitcoin/core.svg)](https://www.npmjs.com/package/@ts-bitcoin/core)
+![Main CI](https://github.com/p2ppsr/cwi-bitcoin/workflows/Main%20CI/badge.svg)
+[![npm](https://img.shields.io/npm/v/cwi-bitcoin.svg)](https://www.npmjs.com/package/cwi-bitcoin)
+[![downloads](https://img.shields.io/npm/dt/cwi-bitcoin.svg)](https://www.npmjs.com/package/cwi-bitcoin)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-![GitHub](https://img.shields.io/github/license/ts-bitcoin/ts-bitcoin)
+![GitHub](https://img.shields.io/github/license/p2ppsr/cwi-bitcoin)
 
 TypeScript library for Bitcoin SV (BSV).
 
 ## Installation
 
-```
-npm install @ts-bitcoin/core
+```sh
+npm install cwi-bitcoin
 ```
 
 ## Example
 
 ```ts
-import { Address, Bn, KeyPair, PrivKey, TxBuilder, TxOut, deps } from '@ts-bitcoin/core'
+import { Address, Bn, KeyPair, PrivKey, TxBuilder, TxOut, deps } from 'cwi-bitcoin'
 
 // make change address
 const privKey1 = PrivKey.fromRandom()
@@ -51,8 +50,9 @@ const raw = tx.toHex()
 
 ## About
 
-TS-Bitcoin is a TypeScript library for Bitcoin SV (BSV). It's a fork of bsv v2 which intended to satisfy certain
-goals:
+CWI-Bitcoin is a TypeScript library for Bitcoin SV (BSV).
+
+It's a fork of a fork of [ts-bitcoin](https://github.com/ts-bitcoin/ts-bitcoin), which is a fork of bsv v2, which intended to satisfy certain goals:
 
 1. Support ease-of-use by being internally consistent. It should not be
    necessary to read the source code of a class or function to know how to use it.
