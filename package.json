@@ -1,8 +1,8 @@
 {
-  "name": "@ts-bitcoin/core",
+  "name": "cwi-bitcoin",
   "description": "TypeScript library for Bitcoin SV (BSV).",
   "version": "1.0.0",
-  "author": "ts-bitcoin",
+  "author": "p2ppsr, ts-bitcoin, bsv v2, ...",
   "license": "MIT",
   "main": "lib/index.js",
   "module": "lib/bundle.esm.js",
@@ -12,11 +12,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ts-bitcoin/ts-bitcoin.git"
+    "url": "git+https://github.com/p2ppsr/cwi-bitcoin.git"
   },
-  "homepage": "https://github.com/ts-bitcoin/ts-bitcoin#readme",
+  "homepage": "https://github.com/p2ppsr/cwi-bitcoin#readme",
   "bugs": {
-    "url": "https://github.com/ts-bitcoin/ts-bitcoin/issues"
+    "url": "https://github.com/p2ppsr/cwi-bitcoin/issues"
   },
   "publishConfig": {
     "access": "public"
