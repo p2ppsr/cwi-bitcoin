@@ -47,7 +47,9 @@ export class Interp extends Struct {
     public static readonly true = Buffer.from([1])
     public static readonly false = Buffer.from([])
 
-    public static readonly MAX_SCRIPT_ELEMENT_SIZE = 520
+    // QUICK FIX PENDING THOROUGH GENESIS UPGRADE REVIEW:
+    // public static readonly MAX_SCRIPT_ELEMENT_SIZE = 520
+    public static readonly MAX_SCRIPT_ELEMENT_SIZE = 1024 * 1024 * 1024
     public static readonly LOCKTIME_THRESHOLD = 500000000 // Tue Nov  5 00:53:20 1985 UTC
 
     // flags taken from bitcoin core

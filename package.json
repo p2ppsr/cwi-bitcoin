@@ -22,7 +22,7 @@
     "access": "public"
   },
   "scripts": {
-    "clean": "rm -rf lib",
+    "clean": "rd /s /q lib>nul 2>&1|echo.>nul",
     "lint": "eslint -c .eslintrc.json --ext .ts --max-warnings 0 src test",
     "format": "prettier --write '{lib,test}/**/*.+(js|json)'",
     "watch": "tsc -w",
