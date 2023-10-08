@@ -35,9 +35,15 @@
  * The "expect" method also facilitates deserializing a sequence of buffers
  * into an object.
  */
-import * as isHex from 'is-hex'
 import { Br } from './br'
 import { Bw } from './bw'
+
+const isHexRegEx = /([0-9]|[a-f])/gim
+
+function isHex(input) {
+  return typeof input === 'string' &&
+    (input.match(isHexRegEx) || []).length === input.length
+}
 
 export class Struct {
     constructor(obj?: any) {
