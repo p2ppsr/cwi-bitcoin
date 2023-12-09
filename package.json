@@ -1,7 +1,7 @@
 {
   "name": "cwi-bitcoin",
   "description": "TypeScript library for Bitcoin SV (BSV).",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "p2ppsr, ts-bitcoin, bsv v2, ...",
   "license": "MIT",
   "main": "lib/index.js",
