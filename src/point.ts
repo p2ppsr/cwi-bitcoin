@@ -85,6 +85,19 @@ export class Point extends _Point {
         return this.copyFrom(point)
     }
 
+    public toBuffer(): Buffer {
+        const xbuf = this.getX().toBuffer({ size: 32 })
+        const ybuf = this.getY().toBuffer({ size: 32 })
+        let prefix: Buffer
+        const odd = ybuf[ybuf.length - 1] % 2
+        if (odd === 1) {
+            prefix = Buffer.from([0x03])
+        } else {
+            prefix = Buffer.from([0x02])
+        }
+        return Buffer.concat([prefix, xbuf])
+    }
+
     public toJSON(): { x: string; y: string } {
         return {
             x: this.getX().toString(),
